@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeysserDelgado</title>
+  </head>
+
+  <body class="flex flex-col min-h-screen bg-gray-100 text-gray-800">
+  <!-- Header (encabezado superior) -->
+    <header class="w-full bg-blue-600 text-white p-6 flex items-center justify-between shadow-md">
+      <h1 class="text-3xl font-bold">Neysser Delgado Meza</h1>
+      <img src="./src/assets/images/logo.jpg" alt="Logo personal" class="w-17 h-17 rounded-full">
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="flex flex-1 grid grid-cols-5">
+      <!-- Sidebar -->
+      <nav class="w-64 bg-blue-100 p-6 space-y-4">
+        <ul class="space-y-2">
+          <li><a href="#inicio" class="block text-blue-700 hover:underline">Inicio</a></li>
+          <li><a href="#habilidades" class="block text-blue-700 hover:underline">Habilidades</a></li>
+          <li><a href="#habilidades blandas" class="block text-blue-700 hover:underline">Habilidades blandas</a></li>
+          <li><a href="#proyectos" class="block text-blue-700 hover:underline">Proyectos</a></li>
+          <li><a href="#idiomas" class="block text-blue-700 hover:underline">Idiomas</a></li>
+          <li><a href="https://github.com/FortyTwo43" class="block text-blue-700 hover:underline">GitHub</a></li>
+          <li><a href="./src/pages/contacto.html" class="block text-blue-700 hover:underline">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Contenido principal -->
+      <main class="flex-1 p-6 space-y-8 col-span-4">
+        <!-- Bloques de contenido -->
+        <section id="inicio" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <article class="bg-white p-4 rounded shadow">
+            <h2 class="text-xl font-semibold mb-2">Sobre mí</h2>
+            <p>Soy un programador apasionado por la tecnología,
+            el desarrollo de software, las matemáticas y de 
+            la ciencia en general. Me gusta programar software 
+            que resulte útil para otras personas y que mis
+            programas sean usados por otros.
+            </p>
+          </article>
+
+          <article class="bg-white p-4 rounded shadow">
+            <h2 class="text-xl font-semibold mb-2">Educación</h2>
+            <p>
+            En cuanto a mis estudios, actualmente estoy cursando 
+            la carrera de Ingeniería de Software
+            en la Universidad Laica Eloy Alfaro de Manabí.
+            </p>
+          </article>
+          <article class="bg-white p-4 rounded shadow">
+            <h2 class="text-xl font-semibold mb-2">Experiencia</h2>
+            <p>He trabajado en proyectos personales y colaborativos usando Python, C++, HTML y Lua.</p>
+          </article>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="bg-white p-6 rounded shadow">
+          <h2 class="text-2xl font-bold mb-4 border-b pb-2">Habilidades</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded">Python</span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded">Lua</span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded">HTML</span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded">C++</span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded">Microsoft SQL Server</span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded">Postgres</span>
+          </div>
+        </section>
+
+        <section id="habilidades blandas" class="bg-white p-6 rounded shadow">
+          <h2 class="text-2xl font-bold mb-4 border-b pb-2">Habilidades blandas</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded">Trabajo en equipo</span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded">Empatía</span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded">Responsabilidad</span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded">Pensamiento crítico</span>
+            <span class="bg-blue-200 text-blue-900 px-3 py-1 rounded">Resolución de conflictos</span>
+          </div>
+        </section>
+
+        <section id="proyectos" class="bg-white p-6 rounded shadow">
+          <h2 class="text-2xl font-bold mb-6 border-b pb-2">Proyectos</h2>
+          <ul class="space-y-4">
+            <li>
+              <a href="https://github.com/FortyTwo43/Restaurante" class="block p-4 border border-blue-100 rounded hover:bg-blue-50 hover:shadow" target="_blank">
+                🍽️ Proyecto 1: Sistema de reservas para un restaurante
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/FortyTwo43/Panaderia" class="block p-4 border border-blue-100 rounded hover:bg-blue-50 hover:shadow" target="_blank">
+                🥐 Proyecto 2: Sistema de gestión de ventas en una panadería
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/FortyTwo43/Youtube-downloader" class="block p-4 border border-blue-100 rounded hover:bg-blue-50 hover:shadow" target="_blank">
+                📥 Proyecto 3: YouTube Video Downloader
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/FortyTwo43/Rubik-s-Cube-Solver" class="block p-4 border border-blue-100 rounded hover:bg-blue-50 hover:shadow" target="_blank">
+                🧩 Proyecto 4: Rubik's Cube Solver
+              </a>
+            </li>
+            
+          </ul>
+        </section>
+
+        <section id="idiomas" class="bg-white p-6 rounded shadow">
+          <h2 class="text-2xl font-bold mb-6 border-b pb-2">Idiomas</h2>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-3 p-3 bg-gray-50 rounded shadow-sm">Español</li>
+            <li class="flex items-center gap-3 p-3 bg-gray-50 rounded shadow-sm">Inglés</li>
+            <li class="flex items-center gap-3 p-3 bg-gray-50 rounded shadow-sm">Alemán</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>"Si he mirado más lejos, ha sido porque he subido a hombros de gigantes."</h2>
+        </section>
+
+      </main>
+      <!-- Footer (final de la página) -->
+      <footer class="w-full bg-blue-600 text-white p-4 text-center mt-auto col-span-5">
+        <p>© 2025 Neysser Delgado Meza - Todos los derechos reservados</p>
+        <p> Email: neysser244@gmail.com</p>
+      </footer>
+    </div>
+  <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

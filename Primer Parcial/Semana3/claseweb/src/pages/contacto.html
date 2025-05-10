@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeysserDelgado</title>
+  </head>
+
+  <body class="flex flex-col min-h-screen bg-gray-100 text-gray-800">
+  <!-- Header (encabezado superior) -->
+    <header class="w-full bg-blue-600 text-white p-6 flex items-center justify-between shadow-md">
+      <h1 class="text-3xl font-bold">Neysser Delgado Meza</h1>
+      <img src="./src/assets/images/logo.jpg" alt="Logo personal" class="w-17 h-17 rounded-full">
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="flex flex-1 grid grid-cols-5">
+      <!-- Sidebar -->
+      <nav class="w-64 bg-blue-100 p-6 space-y-4">
+        <ul class="space-y-2">
+          <li><a href="../../index.html" class="block text-blue-700 hover:underline">Inicio</a></li>
+          <li><a href="../../index.html" class="block text-blue-700 hover:underline">Habilidades</a></li>
+          <li><a href="../../index.html" class="block text-blue-700 hover:underline">Habilidades blandas</a></li>
+          <li><a href="../../index.html" class="block text-blue-700 hover:underline">Proyectos</a></li>
+          <li><a href="../../index.html" class="block text-blue-700 hover:underline">Idiomas</a></li>
+          <li><a href="https://github.com/FortyTwo43" class="block text-blue-700 hover:underline">GitHub</a></li>
+          <li><a href="#contacto" class="block text-blue-700 hover:underline">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contenido principal -->
+      <main class="flex-1 p-6 space-y-8 col-span-4">         
+        <!-- Formulario -->
+            <section id="contacto" class="bg-white p-6 rounded shadow">
+            <h2 class="text-2xl font-bold mb-4 ">Contacto</h2>
+                <form  class="space-y-4">
+                    <div>
+                    <label for="nombre" class="block mb-1">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="w-full border rounded p-2" required>
+                    </div>
+                    <div>
+                    <label for="email" class="block mb-1">Correo:</label>
+                    <input type="email" id="email" name="email" class="w-full border rounded p-2" required>
+                    </div>
+                    <div>
+                    <label for="mensaje" class="block mb-1">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" class="w-full border rounded p-2" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Enviar</button>
+                </form>
+            </section>
+      </main>
+    </div>
+
+    <!-- Footer (final de la página) -->
+    <footer class="w-full bg-blue-600 text-white p-4 text-center mt-auto">
+      <p>© 2025 Neysser Delgado Meza - Todos los derechos reservados</p>
+      <p> Email: neysser244@gmail.com</p>
+    </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
