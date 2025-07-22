@@ -1,0 +1,6 @@
+<div class="movie-container">
+    <h2>{{ movie.title }}</h2>
+    <img [src]="movie.posterUrl" alt="{{ movie.title }} poster">
+    <p>{{ movie.description }}</p>
+    <button (click)="onMovieSelected()">Select</button>
+</div>
