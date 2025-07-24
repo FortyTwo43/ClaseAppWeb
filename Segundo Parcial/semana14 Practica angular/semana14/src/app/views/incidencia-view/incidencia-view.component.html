@@ -1,0 +1,14 @@
+<div>
+  <app-incidencia-form
+    [incidencia]="editando ?? undefined"
+    (submit)="handleCreateOrUpdate($event)">
+  </app-incidencia-form>
+  
+  <div class="incidencia-lista">
+    <app-incidencia-list
+      [incidencias]="incidencias"
+      (editar)="editar($event)"
+      (eliminar)="eliminar($event)">
+    </app-incidencia-list>
+  </div>
+</div>

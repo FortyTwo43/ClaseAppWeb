@@ -1,0 +1,11 @@
+<div>
+  <app-comerciante-form
+    [initialData]="editando || undefined"
+    (submit)="handleCreateOrUpdate($event)">
+  </app-comerciante-form>
+  <app-comerciante-list
+    [comerciantes]="comerciantes"
+    (edit)="handleEdit($event)"
+    (delete)="handleDelete($event)">
+  </app-comerciante-list>
+</div>

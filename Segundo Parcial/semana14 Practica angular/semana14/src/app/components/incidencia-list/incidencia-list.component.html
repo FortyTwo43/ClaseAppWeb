@@ -1,0 +1,8 @@
+<div>
+  <app-incidencia-card
+    *ngFor="let incidencia of incidencias"
+    [incidencia]="incidencia"
+    (editar)="onEditar($event)"
+    (eliminar)="onEliminar($event)">
+  </app-incidencia-card>
+</div>

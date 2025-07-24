@@ -1,0 +1,23 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="titulo">Título:</label>
+    <input id="titulo" type="text" formControlName="titulo">
+  </div>
+
+  <div>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" formControlName="mensaje"></textarea>
+  </div>
+
+  <div>
+    <label for="fecha_envio">Fecha de Envío:</label>
+    <input id="fecha_envio" type="date" formControlName="fecha_envio">
+  </div>
+
+  <div>
+    <label for="id_comerciante">ID Comerciante:</label>
+    <input id="id_comerciante" type="number" formControlName="id_comerciante">
+  </div>
+
+  <button type="submit">Guardar</button>
+</form>

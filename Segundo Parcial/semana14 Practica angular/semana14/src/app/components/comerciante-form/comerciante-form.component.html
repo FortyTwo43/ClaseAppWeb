@@ -1,0 +1,8 @@
+<form (ngSubmit)="handleSubmit()">
+  <h2>{{ initialData ? 'Editar' : 'Crear' }} Comerciante</h2>
+  <input name="nombre" [(ngModel)]="formData.nombre" placeholder="Nombre" required />
+  <input name="email" [(ngModel)]="formData.email" placeholder="Email" required />
+  <input name="telefono" [(ngModel)]="formData.telefono" placeholder="Teléfono" required />
+  <input name="direccion" [(ngModel)]="formData.direccion" placeholder="Dirección" required />
+  <button type="submit">Guardar</button>
+</form>

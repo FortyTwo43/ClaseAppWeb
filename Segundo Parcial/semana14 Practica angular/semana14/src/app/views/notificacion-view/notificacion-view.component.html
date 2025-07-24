@@ -1,0 +1,16 @@
+<div class="notificacion-view">
+  <h2>Gestión de Notificaciones</h2>
+
+  <app-notificacion-form
+    [notificacion]="editando"
+    (submit)="handleCreateOrUpdate($event)">
+  </app-notificacion-form>
+
+  <hr />
+
+  <app-notificacion-list
+    [notificaciones]="notificaciones"
+    (editar)="editar($event)"
+    (eliminar)="eliminar($event)">
+  </app-notificacion-list>
+</div>

@@ -1,0 +1,8 @@
+<div>
+  <app-comerciante-card
+    *ngFor="let comerciante of comerciantes"
+    [comerciante]="comerciante"
+    (edit)="handleEdit($event)"
+    (delete)="handleDelete($event)">
+  </app-comerciante-card>
+</div>

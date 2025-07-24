@@ -1,0 +1,33 @@
+<form (ngSubmit)="onSubmit()">
+  <h2>{{ incidencia ? 'Editar' : 'Crear' }} Incidencias</h2>
+  <input
+    name="descripcion"
+    [(ngModel)]="formData.descripcion"
+    placeholder="Descripcion"
+    required
+    #descripcion="ngModel"
+  />
+  <input
+    name="fecha"
+    [(ngModel)]="formData.fecha"
+    placeholder="Fecha"
+    required
+    #fecha="ngModel"
+  />
+  <input
+    name="estado"
+    [(ngModel)]="formData.estado"
+    placeholder="Estado"
+    required
+    #estado="ngModel"
+  />
+  <input
+    name="id_comerciante"
+    type="number"
+    [(ngModel)]="formData.id_comerciante"
+    placeholder="id_comerciante"
+    required
+    #id_comerciante="ngModel"
+  />
+  <button type="submit">Guardar</button>
+</form>

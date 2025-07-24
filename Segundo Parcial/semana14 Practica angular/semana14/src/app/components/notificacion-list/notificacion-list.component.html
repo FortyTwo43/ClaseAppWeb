@@ -1,0 +1,8 @@
+<div class="notificacion-list">
+  <app-notificacion-card
+    *ngFor="let notificacion of notificaciones"
+    [notificacion]="notificacion"
+    (editar)="onEditar($event)"
+    (eliminar)="onEliminar($event)">
+  </app-notificacion-card>
+</div>

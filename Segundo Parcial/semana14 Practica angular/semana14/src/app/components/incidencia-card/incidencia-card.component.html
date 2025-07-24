@@ -1,0 +1,11 @@
+<div class="incidencia-item">
+  <h1>ID: {{ incidencia.id_incidencia }}</h1>
+  <h1>Descripcion: {{ incidencia.descripcion }}</h1>
+  <h1>Estado: {{ incidencia.estado }}</h1>
+  <h1>Fecha: {{ incidencia.fecha }}</h1>
+  <h1>ID Comerciante: {{ incidencia.id_comerciante }}</h1>
+  <div>
+    <button (click)="onEliminar(incidencia.id_incidencia)">Eliminar</button>
+    <button (click)="onEditar(incidencia)">Editar</button>
+  </div>
+</div>

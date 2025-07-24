@@ -1,0 +1,10 @@
+.comerciante {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: rgb(146, 10, 219);
+}
+button {
+  margin-right: 8px;
+}

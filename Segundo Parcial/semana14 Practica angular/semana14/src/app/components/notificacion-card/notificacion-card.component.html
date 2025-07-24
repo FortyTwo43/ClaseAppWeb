@@ -1,0 +1,9 @@
+<div class="notificacion-card">
+  <h3>{{ notificacion.titulo }}</h3>
+  <p>{{ notificacion.mensaje }}</p>
+  <p><strong>Fecha de envío:</strong> {{ notificacion.fecha_envio }}</p>
+  <p><strong>ID Comerciante:</strong> {{ notificacion.id_comerciante }}</p>
+
+  <button (click)="onEditar()">Editar</button>
+  <button (click)="onEliminar()">Eliminar</button>
+</div>
